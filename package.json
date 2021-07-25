@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/deckiedevs/tech-blog.git"
+    "url": "git+https://github.com/krutipatel07/MVC-TechBlog.git"
   },
-  "author": "Mila Decker",
+  "author": "Kruti Patel",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/deckiedevs/tech-blog/issues"
+    "url": "https://github.com/krutipatel07/MVC-TechBlog/issues"
   },
-  "homepage": "https://github.com/deckiedevs/tech-blog#readme",
+  "homepage": "https://github.com/krutipatel07/MVC-TechBlog#readme",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "connect-session-sequelize": "^7.1.1",
