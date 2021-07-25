@@ -5,7 +5,7 @@
 ## Description
 Tech Blog is a full-stack RESTful application that allows users to create an account to write posts and comments.
             
-View the deployed page at [Tech Blog](https://deckiedevs-tech-blog.herokuapp.com/).
+View the deployed page at [Tech Blog](https://quiet-escarpment-26240.herokuapp.com/).
 <br><br>
 
 ## Contents
