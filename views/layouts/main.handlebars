@@ -1,40 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Just Tech News</title>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/stylesheets/style.css">
+    <title>Tech Blog</title>
 </head>
-
-<body>
-    <div class="wrapper">
-        <header>
-            <h1>
-                <a href="/">The Tech Blog</a>
-            </h1>
-            <nav>
+<body class="flex-column min-100-vh">
+    <header class="hero">
+        <nav class="nav">
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
                 {{#if loggedIn}}
-                <a href="/">Home</a>
-                <a href="/dashboard">dashboard</a>
-                <button id="logout" class="btn-no-style">logout</button>
+                <li>
+                    <a href="/dashboard">Dashboard</a>
+                </li>
+                <button id="logout" class="btn-no-style">Logout</button>
                 {{else}}
-                <a href="/login">login</a>
+                <li>
+                    <a href="/login">Login</a>
+                </li>
                 {{/if}}
-            </nav>
-        </header>
-        <main>
-            {{!-- 2 curlies convert HTML into strings (< becomes &lt;) --}} {{!-- 3 curlies renders data as HTML --}}
-                {{{ body }}} </main>
-                <footer>
-                    © Jennifren 2021
-                </footer>
-    </div>
+            </ul>
+        </nav>
+        <h1 class="app-title">The Tech Blog</h1>
+    </header>
+    
+    <main>
+        {{{ body }}}
+    </main>
 
     {{#if loggedIn}}
     <script src="/javascript/logout.js"></script>
     {{/if}}
 </body>
-
 </html>
